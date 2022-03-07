@@ -10,6 +10,9 @@ A brief description of what his Data Structure and why we use.
 **Tool:** vscode
 
 **Language :** python
+
+## Note :
+This is Not Language Specified We can use any Language we need here i am using python , u can use whatever u can comfort
   
 ## Used By
 Helps to Solve the Problem in Optimal way 
