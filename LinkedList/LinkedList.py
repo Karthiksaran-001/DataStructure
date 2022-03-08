@@ -1,53 +1,34 @@
 class Node:
-    def __init__(self , data):
-        self.data = data
-        self.next = None
+  def __init__(self, data=None, next_node=None):
+    self.data = data
+    self.next_node = next_node
 
 class LinkedList:
-    def __init__(self):
-        self.head = None 
+  def __init__(self):
+    self.head = None
 
-    ## Insert Data at Begining 
-    def push(self , new_value):
-        new_node = Node(new_value) ## Create new Node 
-        new_node.next = self.head 
-        ## Previously Head Point To Null Now our new node point to Null
-        self.head = new_node
+  ## Method to display all elements inside the Linked List
+  def print(self):
+    if self.head is None:
+      print("Linked List is empty")
+      return
+    iterator = self.head
+    list_str = ' '
+    while iterator:
+      list_str += str(iterator.data) + '-->'
+      iterator = iterator.next_node
+    print(list_str)
 
+  ## Insertion of an element
 
-    ##Insert data at any position 
-    def insertAt(self , prev_node , new_value): ## Without knowing Previous node we cant insert
-        if(prev_node is None):
-            print("Previous Node is Empty")
-        new_node = Node(new_value)
-        new_node.next = prev_node.next
-        prev_node.next = new_node
-
-    
-    ## Insert at the End
-    def insertAtEnd(self , new_value):
-        new_node = Node(new_value)
-
-        #check the LinkedList is Empty
-        if self.head is None:
-            self.head = new_value
-            return
-        last = self.head
-        while(last.next):
-            last = last.next
-
-        last.next = new_value
-    
-    # just for demo
-    def printlist(self):
-        tmp = self.head
-        while(tmp):
-            print(tmp.data)
-            tmp = tmp.next
+  ## 1. Beginning of the Linked List
+  ## Time Complexity : O(1)
+  def insert_at_begining(self, data):
+    node = Node(data, self.head)
+    self.head = node
 
 
-if __name__ == "__main__":
-    llist = LinkedList()
-    llist.insertAtEnd(5)
-    llist.push(10)
-    llist.printlist()
+ll = LinkedList()
+ll.insert_at_begining(10)
+ll.insert_at_begining(20)
+ll.print()
