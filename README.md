@@ -10,6 +10,9 @@ A brief description of what his Data Structure and why we use.
 **Tool:** vscode
 
 **Language :** python
+
+## Note :
+This is Not Language Specified We can use any Language we need here i am using python , u can use whatever u can comfort
   
 ## Used By
 Helps to Solve the Problem in Optimal way 
@@ -51,3 +54,21 @@ Which One we Choose :
 **So In Maximum Time WE will Go For Time Aspect more than Space Aspects**  
 
 **Time Complexity > Space Complexity**
+
+## Types Of Analysis
+1.	Apostiary Analysis
+2.	Apriori Analysis
+
+Apostiary Analysis: (Relative Analysis)
+•	Dependent on the Language of Compiler , and type of hardware we are using .
+•	Exact Answer we Get 
+•	Every Time we Get Different Answer 
+•	Program running fast becozz of hardware efficient.
+
+Apriori Analysis : (Absolute Analysis)
+•	Independent of language Of Compiler and type of hardware we using , it is completely different to Previous one .
+•	Approximate Result we Get
+•	Every Time we Get Same Answer
+•	Program Running Fast Becozz of Time Complexity is Less(Good Logic).
+We Always Use Absolute Analysis(Aprior Analysis)
+So Language and Hardware are not so important for efficient , Good Logic Always the Matter .  
